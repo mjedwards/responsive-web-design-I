@@ -348,6 +348,13 @@ footer p {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        position: relative;
+        width: 100%;
+    }
+
+    nav {
+        width: 90%;
+        justify-content: inherit;
     }
 
     nav a {
@@ -367,7 +374,11 @@ footer p {
     section.section-cta div {
         width: 100%;
         margin-left: 0;
-        padding: 100px 100px;
+        padding: 100px 0px;
+    }
+
+    section.section-cta button {
+        width: 25%;
     }
 
 	section.section-cta img {
