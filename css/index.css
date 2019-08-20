@@ -343,6 +343,39 @@ footer p {
 
 /* media queries */
 
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0px 40px;
+    }
+
+    .logo {
+        margin: 40px auto;
+    }
+
+    .section-cta {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    section.section-cta div {
+        width: 100%;
+        margin-left: 0;
+        padding: 100px 100px;
+    }
+
+	section.section-cta img {
+		display: none;
+    }
+    
+}
+
 @media screen and (max-width: 500px) {
 	div.container {
 		width: 100vw;
