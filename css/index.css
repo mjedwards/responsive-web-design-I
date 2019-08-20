@@ -108,7 +108,7 @@ nav a {
 }
 
 nav a:hover {
-	color: white;
+	color: #008B8B;
 }
 
 /* ---------------- */
@@ -384,6 +384,20 @@ footer p {
 	section.section-cta img {
 		display: none;
     }
+
+    /* services page responsive style  */
+    section.services article {
+        padding: 0px 15px;
+    }
+
+    section.services article p {
+        padding: 10px 0px;
+    }
+
+    section.facts article p {
+        padding-right: 0px;
+    }
+    /* ------------ */
     
 }
 
@@ -460,7 +474,7 @@ footer p {
 
 /* responsive service page */
 section.services {
-	margin-top: 200px;
+	margin-top: 0px;
 }
 
 section.services article .mobile {
