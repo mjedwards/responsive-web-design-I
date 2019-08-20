@@ -343,7 +343,7 @@ footer p {
 
 /* media queries */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
     header {
         flex-direction: column-reverse;
         justify-content: center;
@@ -387,16 +387,24 @@ footer p {
 		width: 100%;
 		flex-direction: column-reverse;
 		font-size: 25px;
-		padding-bottom: 15px;
+        padding-bottom: 15px;
+        position: relative;
 	}
 
 	nav {
 		flex-direction: column;
-		line-height: 2rem;
-	}
+        line-height: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+    
 
 	header a {
-		margin: 0px auto;
+        margin: 20px auto;
+        border-bottom: solid 1px black;
+        width: 100%;
+        display: flex;
+        justify-content: center;
 	}
 
 	/* styling for home page */
@@ -408,7 +416,6 @@ footer p {
 	section.section-cta div {
 		margin: 0;
 		width: 100%;
-		margin-top: 300px;
 	}
 
 	section div h1 {
@@ -433,7 +440,11 @@ footer p {
 	section.main-content div {
 		width: 100%;
 		padding: 0 30px;
-	}
+    }
+    
+    hr {
+        width: 90%;
+    }
 /* ---------------- */
 
 /* responsive service page */
@@ -524,7 +535,8 @@ section.contact-form form {
 /* general styling of footer for all pages */
 	footer {
 		justify-content: center;
-		align-items: center;
+        align-items: flex-start;
+        margin-left:25px;
 	}
 }
 
