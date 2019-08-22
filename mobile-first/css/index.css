@@ -1,0 +1,447 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+div.container {
+	display: flex;
+    width: 90vw;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/* general styling of header for all pages */
+header {
+    display: flex;
+	justify-content: space-evenly;
+    height: 45%;
+    width: 100%;
+    flex-direction: column-reverse;
+    font-size: 25px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+	text-decoration: none;
+	color: grey;
+	margin: 0px 50px;
+}
+
+hr {
+	border: 1px solid black;
+	width: 100%;
+}
+
+
+header a {
+    margin: 20px auto;
+    border-bottom: solid 1px black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* styling for home page */
+section.section-cta {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+section.section-cta div {
+    margin: 50px 0px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+section div h1 {
+    font-size: 50px;
+}
+
+section.section-cta img {
+   display: none;
+}
+
+button {
+	width: 40%;
+    border: 1px solid black;
+    padding: 5px 0px;
+    font-size: 16px;
+    background: white;
+}
+
+section.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.main-content h3 {
+    font-size: 30px;
+}
+
+section.main-content div {
+    width: 100%;
+    padding: 10px 30px;
+    margin: 10px 0px;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+hr {
+    width: 90%;
+}
+/* ---------------- */
+
+/* responsive service page */
+section.services {
+margin-top: 0px;
+}
+
+section.services article .mobile {
+padding: 20px 20px;
+}
+
+.services article p {
+padding: 15px 0px;
+}
+
+button {
+padding: 5px 0px;
+font-size: 12px;
+}
+
+section.services .description {
+padding: 0px 25px;
+margin-bottom: 125px;
+text-align: center;
+}
+
+section.services article {
+width: 85%;
+padding: 0px 15px;
+height: 275px;
+}
+
+section.facts {
+flex-direction: column;
+text-align: center;
+}
+
+section.facts article p {
+padding: 0 25px;
+}
+
+ul {
+list-style: none;
+margin-left: 0;
+}
+
+section.facts img {
+margin: 20px 0px;
+}
+
+/* --------------- */
+
+/* responsive product page */
+
+.product {
+margin-top: 200px;
+}
+
+div.product-container {
+flex-direction: column;
+}
+
+div.container .product-card {
+width: 100%;
+}
+
+/* ------------ */
+
+/* responsive about page */
+section.about {
+margin-top: 250px;
+}
+
+section.about article {
+padding: 0 25px;
+}
+
+/* responsive contact page */
+section.contact-form {
+margin-top: 245px;
+}
+
+section.contact-form form {
+padding: 0 25px;
+}
+/* ---------------- */
+
+/* general styling of footer for all pages */
+footer {
+    justify-content: center;
+    align-items: flex-start;
+    margin-left:25px;
+}
+
+
+/* media queries */
+
+@media screen and (min-width: 700px) {
+     header {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+    }
+
+    header a {
+        border: none;
+    }
+
+    nav {
+        width: 90%;
+        justify-content: inherit;
+        flex-direction: row
+    }
+
+    nav a {
+        margin: 0px 20px;
+    }
+
+    .logo {
+        margin: 40px auto;
+    }
+
+    .section-cta {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    section.section-cta div {
+        width: 100%;
+        margin-left: 0;
+        padding: 100px 0px;
+    }
+
+    section.section-cta button {
+        width: 25%;
+    }
+
+	section.section-cta img {
+		display: none;
+    } 
+
+    section.main-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    section.main-content div {
+        width: 30%;
+        margin: 55px 0;
+        padding: 0 0;
+    }
+    
+    
+    section.main-content img {
+        width: 100%;
+        margin-top: 90px;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    /* services page responsive style  */
+    section.services article {
+        padding: 0px 15px;
+    }
+
+    section.services article p {
+        padding: 10px 0px;
+    }
+
+    section.facts article p {
+        padding-right: 0px;
+    }
+    /* ------------ */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    
+    footer address a {
+        display: block;
+        padding-top: 15px;
+    }
+    
+    footer p {
+        text-align: center;
+        padding: 50px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (min-width: 1100px) {
+    header {
+        flex-direction: row;
+    }
+
+    .logo {
+        margin: 15px auto;
+    }
+    
+    .invert { 
+        filter: invert(0%); 
+    }
+    
+    .logo:hover {
+        filter: invert(50%);
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav a:hover {
+        color: #008B8B;
+    }
+
+    button:hover {
+        cursor: pointer;
+        animation: bounce 0.5s linear;
+    }
+    
+    hr {
+        border: 1px solid black;
+        width: 100%;
+    }
+
+    section.section-cta {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 100px;
+        align-items: center;
+    }
+    
+    section.section-cta div {
+        text-align: center;
+        width: 25%;
+        margin-left: 90px;
+    }
+    
+    section.section-cta img {
+        display: inline-block;
+        filter: drop-shadow(6px 3px 8px black);
+    }
+    
+    section div h1 {
+        font-size: 80px;
+    }
+
+    section.section-cta button {
+        width: 70%;
+    }
+	
+}
+
+/* --------------- */
+
+
+/* animations */
+@keyframes bounce {
+	0% {
+		transform: translateY(0px)
+	  }
+	50% {
+		transform: translateY(10px)
+	  }  
+	
+	100% {
+		transform: translateY(0px)
+	  }  
+}
